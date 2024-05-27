@@ -10,11 +10,35 @@ body {
 header {
   background-color: #404040;
   padding: 1rem;
-
 }
 
 header a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+}
+
+main {
+  padding: 5rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1.5rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+  height: 18rem;
+}
+
+.product-info {
+  padding: 1.5rem;
 }
