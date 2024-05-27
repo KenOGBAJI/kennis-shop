@@ -1,8 +1,8 @@
 const data = {
   products: [
     {
-      name: 'T-shirts',
-      slug: 'short-t-shirt',
+      name: 'Women Jeans',
+      slug: 'women-stock-jeans',
       category: 'Shirts',
       images: '/images/women-jeans-54.jpg',
       price: 120,
