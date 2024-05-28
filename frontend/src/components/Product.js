@@ -11,7 +11,7 @@ export default function Product(props) {
       <Card>
         <Link to={`/product/${product.slug}`}>
           <img
-            src={product.images}
+            src={product.image}
             className="card-img-top"
             alt={product.name}
           />

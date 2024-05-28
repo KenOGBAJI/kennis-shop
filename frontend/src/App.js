@@ -1,5 +1,5 @@
 // import data from './data';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
@@ -20,7 +20,7 @@ function App() {
           </Navbar>
         </header>
         <main>
-          <Container>
+          <Container className="mt-4">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/" element={<HomeScreen />} />
