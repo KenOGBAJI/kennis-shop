@@ -39,3 +39,9 @@
 3. useState hook
 4. useEffect hook
 5. useReducer hook
+
+#9 Manage state by useReducer hook
+
+1. define reducer
+2. update fetch data
+3. get state from useReducer
