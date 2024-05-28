@@ -1,23 +1,23 @@
-#1
+# 1
 
 1. create react app
 2. create header section
 3. create github repo and commit the first changes
 
-#5. List Products
+# 5. List Products
 
 1. create product array
 2. add product images
 3. render products
 4. style products
 
-#6
+# 6
 
 1. npm i react-router-dom
 2. create route for home screen
 3. create route for product screen
 
-#7 Create nodejs server
+# 7 Create nodejs server
 
 1. run npm init in the root folder
 2. Update package.json set type: module
@@ -32,7 +32,7 @@
 11. return products
 12. run npm start
 
-#8 Fetch products from backend
+# 8 Fetch products from backend
 
 1. set proxy in package.json
 2. npm install axios
@@ -40,8 +40,13 @@
 4. useEffect hook
 5. useReducer hook
 
-#9 Manage state by useReducer hook
+# 9 Manage state by useReducer hook
 
 1. define reducer
 2. update fetch data
 3. get state from useReducer
+
+# 10. Add Bootstrap to UI framework
+
+1. npm install bootstrap bootstrap
+2. update app.js
