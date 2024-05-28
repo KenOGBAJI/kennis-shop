@@ -50,3 +50,9 @@
 
 1. npm install bootstrap bootstrap
 2. update app.js
+
+# 11. Create Rating and Product Component
+
+1.  Create Rating Component
+2.  Create Product Component
+3.  Use Rating Component in Product Component
