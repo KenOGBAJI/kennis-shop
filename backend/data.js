@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'Women Jeans',
       slug: 'women-stock-jeans',
       category: 'Shirts',
@@ -13,6 +14,7 @@ const data = {
       description: 'high quality shirt',
     },
     {
+      _id: '2',
       name: 'Men T shirts',
       slug: 'men-t-shirt',
       category: 'Shirts',
@@ -25,6 +27,7 @@ const data = {
       description: 'high quality shirt',
     },
     {
+      _id: '3',
       name: 'Long Polo Shirts',
       slug: 'long-polo--shirts',
       category: 'Shirts',
@@ -37,6 +40,7 @@ const data = {
       description: 'high quality classic wear',
     },
     {
+      _id: '4',
       name: 'Men Blue Jeans',
       slug: 'men-blue-jeans',
       category: 'Jeans',
@@ -49,6 +53,7 @@ const data = {
       description: 'high quality branded jeans',
     },
     {
+      _id: '5',
       name: 'Chateux Perfume',
       slug: 'chateux-perfume',
       category: 'Lifestyle',
@@ -61,6 +66,7 @@ const data = {
       description: 'high Classic perfumes',
     },
     {
+      _id: '6',
       name: 'Charllote Perfume',
       slug: 'branded-perfume',
       category: 'Lifestyle',
@@ -73,6 +79,7 @@ const data = {
       description: 'high lasting fragrance perfume',
     },
     {
+      _id: '7',
       name: 'Rose Perfume',
       slug: 'rose-perfume',
       category: 'Lifestyle',
@@ -85,6 +92,7 @@ const data = {
       description: 'high quality perfume for top class',
     },
     {
+      _id: '8',
       name: 'Lily',
       slug: 'lily-perfume',
       category: 'Lifestyle',
