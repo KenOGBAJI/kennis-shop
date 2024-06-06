@@ -38,7 +38,9 @@ export default function SigninScreen() {
   };
 
   useEffect(() => {
-    if (userInfo) navigate(redirect);
+    if (userInfo) {
+      navigate(redirect);
+    }
   }, [navigate, redirect, userInfo]);
 
   return (
@@ -69,7 +71,7 @@ export default function SigninScreen() {
         </div>
         <div className="mb-3">
           New Customer?{' '}
-          <Link to={`signup?redirect=${redirect}`}>Create your account</Link>
+          <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
         </div>
       </Form>
     </Container>

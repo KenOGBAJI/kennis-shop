@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 export default function CartScreen() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
     cart: { cartItems },
@@ -36,8 +36,8 @@ export default function CartScreen() {
   };
 
   const checkOutHandler = () => {
-              navigate("/signin?redirect/shipping")
-  }
+    navigate('/signin?redirect=/shipping');
+  };
 
   return (
     <div>

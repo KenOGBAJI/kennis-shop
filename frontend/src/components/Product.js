@@ -14,7 +14,7 @@ export default function Product(props) {
     cart: { cartItems },
   } = state;
 
-  const addTCartHandler = async (item) => {
+  const addToCartHandler = async (item) => {
     const existItem = cartItems.find((x) => x._id === product._id);
     const quantity = existItem ? existItem.quantity + 1 : 1;
     const { data } = await axios.get(`/api/products/${item._id}`);
@@ -51,7 +51,7 @@ export default function Product(props) {
               Out of Stock
             </Button>
           ) : (
-            <Button onClick={() => addTCartHandler(product)}>
+            <Button onClick={() => addToCartHandler(product)}>
               Add To Cart
             </Button>
           )}
