@@ -185,7 +185,13 @@
 3. use api in frontend
 
 # 32 Profile Screen
+
 1. get user info fron context
 2. show user information
 3. create user update api
 4. update user info
+
+# 33 Add Sidebar and Searchbox
+
+1. add sidebar
+2. add search box
