@@ -213,3 +213,15 @@
 1. create dashboard ui
 2. implement backend aoi
 3. connect ui to backend
+
+# 37 Manage Products Screen
+
+1. create product list UI
+2. implement backend api
+3. fetch data
+
+# 38 Create Product
+
+1. create product button
+2. implement backend api
+3. handle onClick
