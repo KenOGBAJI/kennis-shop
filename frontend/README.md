@@ -225,3 +225,14 @@
 1. create product button
 2. implement backend api
 3. handle onClick
+
+# 39 Create Edith Product
+
+1. create edith button
+2. create edith product ui
+3. display product info in the input boxes
+
+# 40 Implement Update Product
+
+1. create edith product backend api
+2. handle update click

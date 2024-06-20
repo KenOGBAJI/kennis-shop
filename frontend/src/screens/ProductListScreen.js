@@ -8,7 +8,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/esm/Button';
+import Button from 'react-bootstrap/Button';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -58,7 +58,7 @@ export default function ProductListScreen() {
         });
         dispatch({ type: 'FETCH_SUCCESS', payload: data });
       } catch (error) {
-        dispatch({ type: 'PAY_FAIL', payload: getError(error) });
+        dispatch({ type: 'FETCH_FAIL', payload: getError(error) });
         toast.error(getError(error));
       }
     };
@@ -115,6 +115,7 @@ export default function ProductListScreen() {
                 <th>PRICE</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
+                <th>ACTIONS</th>
               </tr>
             </thead>
             <tbody>
@@ -125,6 +126,15 @@ export default function ProductListScreen() {
                   <td>{product.price}</td>
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
+                  <td>
+                    <Button
+                      type="button"
+                      variant="light"
+                      onClick={() => navigate(`/admin/product/${product._id}`)}
+                    >
+                      Edith
+                    </Button>
+                  </td>
                 </tr>
               ))}
             </tbody>

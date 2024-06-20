@@ -108,7 +108,7 @@ export default function OrderScreen() {
     };
 
     if (!userInfo) {
-      navigate('/login');
+      return navigate('/login');
     }
 
     if (!order._id || successPay || (order._id && order._id !== orderId)) {
@@ -124,7 +124,10 @@ export default function OrderScreen() {
         });
         paypalDispatch({
           type: 'resetOptions',
-          value: { 'client-id': clientId, currency: 'USD' },
+          value: {
+            'client-id': clientId,
+            currency: 'USD',
+          },
         });
         paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });
       };
