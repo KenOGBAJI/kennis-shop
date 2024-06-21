@@ -236,3 +236,15 @@
 
 1. create edith product backend api
 2. handle update click
+
+# Upload Product image with Cloudinary
+
+1. Create Cloudinary account
+2. use the API key in .env file
+3. implement backend API to upload
+
+# Implement Delete Product
+
+1. show delete button
+2. implement backend api
+3. handle onClick
