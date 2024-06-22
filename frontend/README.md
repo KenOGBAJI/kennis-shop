@@ -260,3 +260,14 @@
 1. add deliver button
 2. handle click action
 3. implement backend api for delivered
+
+# 45 Add delete order
+
+1. add delete button
+2. handle onClick event
+3. implement backend api to handle delete by admin
+
+# 46 Create User Screen
+
+1. create the users UI screen
+2. handle backend api for users
