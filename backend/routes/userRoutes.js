@@ -41,7 +41,26 @@ userRouter.put(
       user.email = req.body.email || user.email;
       user.isAdmin = Boolean(req.body.isAdmin);
       const updatedUser = await user.save();
-      res.send({ message: 'User Updated', user: updatedUser });
+      res.send({ message: 'User updated', user: updatedUser });
+    } else {
+      res.status(404).send({ message: 'User not found' });
+    }
+  })
+);
+
+userRouter.delete(
+  '/:id',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const user = await User.findById(req.params.id);
+    if (user) {
+      if (user.email === 'admin@example.com') {
+        res.status(404).send({ message: 'Can not delete admin user' });
+        return;
+      }
+      await user.deleteOne();
+      res.send({ message: 'User deleted' });
     } else {
       res.status(404).send({ message: 'User not found' });
     }
@@ -108,24 +127,6 @@ userRouter.put(
       });
     } else {
       res.status(404).send({ message: 'User Not found' });
-    }
-  })
-);
-
-userRouter.put(
-  '/:id',
-  isAuth,
-  isAdmin,
-  expressAsyncHandler(async (req, res) => {
-    const user = await User.findById(req.params.id);
-    if (user) {
-      user.name = req.body.name || user.name;
-      user.email = req.body.email || user.email;
-      user.isAdmin = Boolean(req.body.isAdmin);
-      const updatedUser = await user.save();
-      res.send({ message: 'User updated', user: updatedUser });
-    } else {
-      res.status(404).send({ message: 'User not found' });
     }
   })
 );
