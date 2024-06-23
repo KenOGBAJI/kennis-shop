@@ -271,3 +271,17 @@
 
 1. create the users UI screen
 2. handle backend api for users
+
+# 47 Create Edith User
+
+1. create edith button
+2. create edith product UI
+3. display product info in the input boxes
+4. implement backend api
+5. handle click event
+
+# 48 Delete User
+
+1. add delete user button
+2. handle onclick actions
+3. implement backend api for deleting user
