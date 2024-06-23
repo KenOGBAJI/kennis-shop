@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { toast } from 'react-toastify';
 import { getError } from '../utils';
 import axios from 'axios';
+import LoadingBox from '../components/LoadingBox';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -42,6 +43,7 @@ export default function ProfileScreen() {
           name,
           email,
           password,
+          confirmPassword,
         },
         {
           headers: { Authorization: `Bearer ${userInfo.token}` },
@@ -49,8 +51,8 @@ export default function ProfileScreen() {
       );
       dispatch({ type: 'UPDATE_SUCCESS' });
       ctxDispatch({ type: 'USER_SIGNIN', payload: data });
-      localStorage.setItem('userInfo', JSON.stringify(data))
-      toast.success('User updated successfully')
+      localStorage.setItem('userInfo', JSON.stringify(data));
+      toast.success('User updated successfully');
     } catch (error) {
       dispatch({ type: 'FETCH_FAIL' });
       toast.error(getError(error));
@@ -97,6 +99,7 @@ export default function ProfileScreen() {
         </Form.Group>
         <div className="mb-3">
           <Button type="submit">Update</Button>
+          {loadingUpdate && <LoadingBox></LoadingBox>}
         </div>
       </form>
     </div>

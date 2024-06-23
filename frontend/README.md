@@ -285,3 +285,16 @@
 1. add delete user button
 2. handle onclick actions
 3. implement backend api for deleting user
+
+# 49 Choose address on Google map
+
+1. create google map credentials
+2. Update .env file with Google api key
+3. create api to send google api to frontend
+4. create map screen
+5. fetch google api
+6. get User location
+7. install @react-google-maps/api
+8. use it in the shipping screen
+9. apply map to the checkout screen
+

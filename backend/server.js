@@ -29,7 +29,12 @@ app.get('/api/keys/paypal', (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
 });
 
-app.use('/api/upload', uploadRouter)
+// google map api
+app.get('/api/keys/google', (req, res) => {
+  res.send({ key: process.env.GOOGLE_API_KEY || '' });
+});
+
+app.use('/api/upload', uploadRouter);
 app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
