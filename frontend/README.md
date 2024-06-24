@@ -298,3 +298,17 @@
 8. use it in the shipping screen
 9. apply map to the checkout screen
 
+# 50 Email Order receipts by Mailgun
+
+1. create mailgun account
+2. add and verify your domain to mailgun
+3. install mailgun-js
+4. add mailgun api key to .env file
+5. change pay order in orderRouter
+6. send emaIL order receipt
+
+# 51 Review Orders
+
+1. create submit review form
+2. handle submit
+3. implement backend api for review
